@@ -1,31 +1,33 @@
 * {
     font-family: "Raleway";
 }
-.nav{
+
+.nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    div{
-    display: flex;
-    align-items: center;
-    transition: all 2s;
-    padding: 20px;
-    
-    
-    :hover{
-    cursor: pointer;
-    color: aqua;;
+
+    div {
+        display: flex;
+        align-items: center;
+        transition: all 2s;
+        padding: 20px;
+
+
+        :hover {
+            cursor: pointer;
+            color: aqua;
+            ;
+        }
+
+        .p {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 16px;
+            color: #000;
+        }
     }
-    
-    .p{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 16px;
-    color: #000;
-    }
-    }
-    }
+}
 
 .big_img {
     width: 1600px;
@@ -77,67 +79,81 @@
     gap: 0px;
     opacity: 0.4px;
 }
-.big_img-h1{
-font-size: 46px;
-font-weight: 600;
-line-height: 57.5px;
-text-align: center;
-margin-top: 140px;
+
+.big_img-h1 {
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 57.5px;
+    text-align: center;
+    margin-top: 140px;
 }
-.card{
-width: 384px;
-height: 458px;
-border-left: 1px solid #282B22;
-padding-left: 30px;
-padding-right: 29px;
+
+.card {
+    width: 384px;
+    height: 458px;
+    border-left: 1px solid #282B22;
+    padding-left: 30px;
+    padding-right: 29px;
 }
-.cards{
-display: flex;
-}
-@media screen and (max-width:992px){
-    .container{
-    max-width: 992px;
-    }
-    .big_img{
-    background-size: cover;
-    }
-    .nav{
-    justify-content:space-between;
-    justify-content: space-around
-    ;
-    }
-    .nav div{
+
+.cards {
     display: flex;
+}
+
+@media screen and (max-width:992px) {
+    .container {
+        max-width: 992px;
     }
-    .card{
-    width: 300px;
+
+    .big_img {
+        background-size: cover;
     }
-    .cards{
-    margin-left: 130px;
+
+    .nav {
+        justify-content: space-between;
+        justify-content: space-around;
     }
-    .big_img-h1{
-font-size: 46px;
-font-weight: 600;
-line-height: 57.5px;
-margin-left: 230px;
+
+    .nav div {
+        display: flex;
     }
-    .big_img div h1{
-    margin-right: 230px;
+
+    .card {
+        width: 300px;
     }
-    .big_img div p{
-    margin-right: 230px;
+
+    .cards {
+        margin-left: 130px;
     }
-    .big_img div button{
-    margin-left: 230px;
+
+    .big_img-h1 {
+        font-size: 46px;
+        font-weight: 600;
+        line-height: 57.5px;
+        margin-left: 230px;
+    }
+
+    .big_img div h1 {
+        margin-right: 230px;
+    }
+
+    .big_img div p {
+        margin-right: 230px;
+    }
+
+    .big_img div button {
+        margin-left: 230px;
     }
 }
-@media screen and(max-width:768px){
-    .card img{
-    padding-right: 20px;
+
+@media screen and(max-width:768px) {
+    .card img {
+        padding-right: 20px;
     }
 }
-@media screen and(max-width:576px){
-    .cards{
-    flex-wrap: wrap;
+
+@media screen and(max-width:576px) {
+    .cards {
+        flex-wrap: wrap;
     }
 }
