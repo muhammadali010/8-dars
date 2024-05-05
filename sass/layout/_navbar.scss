@@ -1,0 +1,25 @@
+.nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+div{
+display: flex;
+align-items: center;
+transition: all 2s;
+padding: 20px;
+
+
+:hover{
+cursor: pointer;
+color: aqua;;
+}
+
+.p{
+font-size: 16px;
+font-weight: 500;
+line-height: 16px;
+color: #000;
+}
+}
+}
