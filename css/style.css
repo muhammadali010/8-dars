@@ -12,6 +12,28 @@
   font-family: "Raleway";
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav div {
+  display: flex;
+  align-items: center;
+  transition: all 2s;
+  padding: 20px;
+}
+.nav div :hover {
+  cursor: pointer;
+  color: aqua;
+}
+.nav div .p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #000;
+}
+
 .big_img {
   width: 1600px;
   height: 687px;
@@ -75,30 +97,46 @@
   height: 458px;
   border-left: 1px solid #282B22;
   padding-left: 30px;
+  padding-right: 29px;
 }
 
 .cards {
   display: flex;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.nav div {
-  display: flex;
-  align-items: center;
-  transition: all 2s;
-  padding: 20px;
-}
-.nav div :hover {
-  cursor: pointer;
-  color: aqua;
-}
-.nav div .p {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 16px;
-  color: #000;
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+  .big_img {
+    background-size: cover;
+  }
+  .nav {
+    justify-content: space-between;
+    justify-content: space-around;
+  }
+  .nav div {
+    display: flex;
+  }
+  .card {
+    width: 300px;
+  }
+  .cards {
+    margin-left: 130px;
+  }
+  .big_img-h1 {
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 57.5px;
+    margin-left: 230px;
+  }
+  .big_img div h1 {
+    margin-right: 230px;
+  }
+  .big_img div p {
+    margin-right: 230px;
+  }
+  .big_img div button {
+    margin-right: 330px;
+  }
 }/*# sourceMappingURL=style.css.map */
