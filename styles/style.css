@@ -1,6 +1,14 @@
 * {
     font-family: "Raleway";
 }
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+    .contayner{
+    max-width: 1600px;
+    margin: 0 auto;
+    }
 
 .nav {
     display: flex;
@@ -99,6 +107,32 @@
 .cards {
     display: flex;
 }
+.block{
+    width: 1600px;
+    height: 688px;
+    background-color: #3D4A39;
+    }
+.block h1{
+text-align: center;
+color: #fff;
+font-size: 46px;
+font-weight: 600;
+line-height: 57.5px;
+padding-top: 100px;
+}
+.block__card{
+display: flex;
+padding-left: 314px;
+margin-top: 70px;
+gap: 340px;
+}
+.block__card p{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31.2px;
+    text-align: center;
+    color: #fff;
+}
 
 @media screen and (max-width:992px) {
     .container {
@@ -145,6 +179,7 @@
         margin-left: 230px;
     }
 }
+
 
 @media screen and(max-width:768px) {
     .card img {
